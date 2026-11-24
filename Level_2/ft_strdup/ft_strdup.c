@@ -1,0 +1,13 @@
+char    *ft_strdup(char *src)
+{
+    int i;
+    char    *copy;
+
+    i = 0;
+    while (src[i] != '\0')
+        i++;
+    copy = malloc(sizeof(char) * i + 1);
+    if (!copy)
+        return (0);
+    return (copy);
+}
